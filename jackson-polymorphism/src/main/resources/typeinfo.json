@@ -1,0 +1,31 @@
+{
+  "hu.zforgo.examples.jackson.model.animal.Animal": [
+	{
+	  "type":"bird",
+	  "impl": "hu.zforgo.examples.jackson.model.animal.Bird"
+	},
+	{
+	  "type":"dog",
+	  "impl": "hu.zforgo.examples.jackson.model.animal.Dog"
+	},
+	{
+	  "type":"cat",
+	  "impl": "hu.zforgo.examples.jackson.model.animal.Cat"
+	}
+  ],
+  "hu.zforgo.examples.jackson.model.criteria.Criteria" : [
+	{
+	  "type":"name",
+	  "impl": "hu.zforgo.examples.jackson.model.criteria.Name"
+	},
+	{
+	  "type":"gender",
+	  "impl": "hu.zforgo.examples.jackson.model.criteria.Gender"
+	},
+	{
+	  "type":"birthday",
+	  "impl": "hu.zforgo.examples.jackson.model.criteria.ExtendedBirthDay"
+	}
+
+  ]
+}

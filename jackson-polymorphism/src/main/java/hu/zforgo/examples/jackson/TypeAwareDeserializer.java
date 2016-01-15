@@ -57,7 +57,7 @@ public class TypeAwareDeserializer extends AsPropertyTypeDeserializer {
 
 	protected Class<TypeAware> findSubType(JsonNode node) {
 		String type = node.get("type").asText();
-		List<TypeDescriptor> all = AppContext.getTypeMap().getOrDefault(_baseType, Collections.emptyList());
+		List<TypeDescriptor> all = AppContext.getTypeMap().getOrDefault(_baseType.getRawClass(), Collections.emptyList());
 		return all.stream().filter(s -> type.equals(s.getType())).findFirst()
 				.orElseThrow(() -> new IllegalArgumentException(String.format("unrecognized type [%s] for %s", type, _baseType))).getImpl();
 	}

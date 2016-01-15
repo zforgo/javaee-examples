@@ -24,7 +24,6 @@ public class AppContext {
 
         URL c = getClass().getClassLoader().getResource("typeinfo.json");
         typeMap = mapper.readValue(c, new TypeReference<Map<Class<TypeAware>, List<TypeDescriptor>>>() {});
-		System.out.printf("valami");
 	}
 
     public static Map<Class<TypeAware>, List<TypeDescriptor>> getTypeMap() {

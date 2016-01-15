@@ -26,6 +26,5 @@
 	  "type":"birthday",
 	  "impl": "hu.zforgo.examples.jackson.model.criteria.ExtendedBirthDay"
 	}
-
   ]
 }

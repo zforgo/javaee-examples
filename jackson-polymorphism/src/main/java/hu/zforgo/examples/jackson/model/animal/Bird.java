@@ -1,13 +1,14 @@
 package hu.zforgo.examples.jackson.model.animal;
 
 public class Bird extends Animal {
-	private String wingpsan;
+	private String wingspan;
 
-	public String getWingpsan() {
-		return wingpsan;
+	public String getWingspan() {
+		return wingspan;
 	}
 
-	public void setWingpsan(String wingpsan) {
-		this.wingpsan = wingpsan;
+	public Bird setWingspan(String wingspan) {
+		this.wingspan = wingspan;
+		return this;
 	}
 }

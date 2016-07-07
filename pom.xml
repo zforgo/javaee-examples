@@ -8,7 +8,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>hugo</name>
+	<name>java-examples</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,5 +19,7 @@
 
 	<modules>
 		<module>jackson-polymorphism</module>
+		<!--<module>poker-hand-calculator</module>-->
+		<module>javaee-json-schema</module>
 	</modules>
 </project>
